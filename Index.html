@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signify Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Javascript.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Signify Studio</h1>
+    </header>
+    <div class="container">
+        <div class="card">
+            <canvas id="signature-canvas"></canvas>
+            <div class="controls">
+                <label for="text-color">Brush Color:</label>
+                <input type="color" id="text-color" class="color-picker">
+                <label for="background-color">Background Color:</label>
+                <input type="color" id="background-color" class="color-picker">
+                <label for="brush-size">Brush Size:</label>
+                <input type="number" id="brush-size" class="brush-size" min="1" max="20" value="5">
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="clear-btn" class="button-38">Clear</button>
+            <button id="save-btn" class="button-38">Save</button>
+            <button id="download-btn" class="button-38">Download</button>
+            <button id="retrieve-btn" class="button-38">Retrieve</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Signify. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+body {
+    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0;
+    padding: 0;
+    background-image: url("Background.jpg");
+    /* Added quotes around the URL */
+    background-size: cover;
+    /* Adjust background size */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(189, 193, 201, 0.5);
+    /* Semi-transparent background color */
+    color: #fffefe;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    animation: slideDown 0.5s ease;
+    backdrop-filter: blur(10px);
+    /* Apply a blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    /* For Safari */
+    text-shadow: none;
+    /* Remove existing text shadow */
+    transition: text-shadow 0.3s ease;
+    /* Add transition for smooth effect */
+}
+
+
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+header:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    /* Add glow effect on hover */
+}
+
+.container {
+    width: 100%;
+    /* Make container a bit bigger */
+    max-width: 1000px;
+    /* Limit container width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    /* Add space between header and container */
+}
+
+.card {
+    background-color: #FCFCFD;
+    border-radius: 10px;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.controls label {
+    margin-right: 10px;
+}
+
+.color-picker {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.brush-size {
+    margin-right: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-38 {
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: .75rem;
+    /* Make buttons a bit bigger */
+    box-sizing: border-box;
+    color: #111827;
+    font-size: 1rem;
+    /* Make buttons text a bit bigger */
+    font-weight: 600;
+    line-height: 1.5rem;
+    /* Make buttons height a bit bigger */
+    padding: 1rem 1.5rem;
+    /* Make buttons padding a bit bigger */
+    text-align: center;
+    text-decoration: none solid #D1D5DB;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 5px;
+}
+
+.button-38:hover {
+    background-color: rgb(249, 250, 251);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-38:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.button-38:focus-visible {
+    box-shadow: none;
+}
+
+footer {
+    position: fixed; /* Position the footer */
+    bottom: 0; /* Stick it to the bottom */
+    width: 100%; /* Make it span the full width */
+    background-color: #000000;
+    color: #dcdcdc;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+}
