@@ -29,7 +29,7 @@ It allows users to draw, customize, save, and download digital signatures direct
 🚀 How to Run
 
 Clone the repository:
-git clone https://github.com/your-username/signify-studio.git
+git clone https://github.com/deepakparagi/signify-studio.git
 
 Navigate to the project folder:
 cd signify-studio
